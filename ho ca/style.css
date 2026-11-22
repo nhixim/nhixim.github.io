@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#content {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('aquarium/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#shark {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    animation: SharkMove 15s linear infinite;
+}
+
+@keyframes SharkMove {
+    0%   { left: 50px; top: 300px; transform: scaleX(1); }
+    49%  { left: 75%; top: 150px; transform: scaleX(1); }
+    50%  { left: 75%; top: 150px; transform: scaleX(-1); }
+    99%  { left: 50px; top: 300px; transform: scaleX(-1); }
+    100% { left: 50px; top: 300px; transform: scaleX(1); }
+}
+#turtle {
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    animation: TurtleMove 22s ease-in-out infinite;
+}
+
+@keyframes TurtleMove {
+    0%   { left: 10%; top: 70%; transform: scaleX(1); }
+    49%  { left: 80%; top: 60%; transform: scaleX(1); }
+    50%  { left: 80%; top: 60%; transform: scaleX(-1); }
+    99%  { left: 10%; top: 70%; transform: scaleX(-1); }
+    100% { left: 10%; top: 70%; transform: scaleX(1); }
+}
+#fS {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    animation: fSmove 12s linear infinite;
+}
+
+@keyframes fSmove {
+    0%   { left: 50px; top: 300px; transform: scaleX(1); }
+    49%  { left: 75%; top: 150px; transform: scaleX(1); }
+    50%  { left: 75%; top: 150px; transform: scaleX(-1); }
+    99%  { left: 50px; top: 300px; transform: scaleX(-1); }
+    100% { left: 50px; top: 300px; transform: scaleX(1); }
+}
+#gFS {
+    position: absolute;
+    right: 120px;
+    top: 300px;
+    animation: gFSm 14s ease-in-out infinite;
+}
+
+@keyframes gFSm {
+    0%   { right: 10%; top: 70%; transform: scaleX(1); }
+    49%  { right: 80%; top: 60%; transform: scaleX(1); }
+    50%  { right: 80%; top: 60%; transform: scaleX(-1); }
+    99%  { right: 10%; top: 70%; transform: scaleX(-1); }
+    100% { right: 10%; top: 70%; transform: scaleX(1); }
+}
+#diver1 {
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    animation: DiverMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes DiverMove {
+    0%   { top: 100px; left: 30%; }
+    50%  { top: 350px; left: 35%; }
+    100% { top: 150px; left: 40%; }
+}
+#diver2 {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    animation: DiverMove2 8s ease-in-out infinite alternate;
+}
+
+@keyframes DiverMove2 {
+    0%   { top: 10px; left: 50%; }
+    50%  { top: 35px; left: 35%; }
+    100% { top: 15px; left: 40%; }
+}
