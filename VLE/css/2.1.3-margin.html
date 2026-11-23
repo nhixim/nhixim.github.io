@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Khung viền CSS - Mẫu 2</title>
+  <style>
+    .outer { border: 1px solid #888; padding: 10px; margin: 10px; }
+    .box { border: 2px solid #336; background: #eef; padding: 5px; width: 300px; margin-bottom: 15px; }
+    .m1 { margin-left: 50px; }
+    .m2 { margin-left: 100px; margin-right: 20px; }
+    .m3 { margin-left: auto; margin-right: auto; }  /* căn giữa */
+    .m4 { margin: 10px 30px 10px 60px; }            /* top right bottom left */
+    .inherit-demo { margin-left: inherit; }         /* kế thừa từ phần tử cha */
+  </style>
+</head>
+<body>
+  <div class="outer" style="margin-left: 40px;">
+    Use of the inherit value
+    <div class="box inherit-demo">margin-left: inherit (lấy từ phần tử cha: 40px)</div>
+    <div class="box m1">margin-left: 50px</div>
+    <div class="box m2">margin-left: 100px; margin-right: 20px</div>
+    <div class="box m3">margin-left/right: auto (ở giữa)</div>
+    <div class="box m4">margin: 10px 30px 10px 60px</div>
+  </div>
+</body>
+</html>
